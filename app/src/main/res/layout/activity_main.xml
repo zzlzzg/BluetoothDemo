@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bluetooth.tiaopi.MainActivity">
+
+    <TextView
+        android:id="@+id/check_bt_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:text="检查蓝牙设备"/>
+
+    <Button
+        android:id="@+id/open_bt_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="打开蓝牙"/>
+
+    <Button
+        android:id="@+id/search_bt_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="搜索设备"/>
+
+    <Button
+        android:id="@+id/client_bt_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="打开接收界面(客户端)"/>
+
+    <Button
+        android:id="@+id/service_bt_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="打开发送界面(服务端)"/>
+
+</LinearLayout>

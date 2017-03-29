@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context="com.bluetooth.tiaopi.SearchBtActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/search_bt_progress"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/search_bt_button"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:text="搜索蓝牙设备"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_bt_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="取消搜索"/>
+
+    <Button
+        android:id="@+id/cancel_connect_bt_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="取消建立连接"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bt_adds_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

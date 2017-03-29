@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_clinet_bt2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bluetooth.tiaopi.ClientBtActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="48dp" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="发送"/>
+
+    </LinearLayout>
+    
+</LinearLayout>
